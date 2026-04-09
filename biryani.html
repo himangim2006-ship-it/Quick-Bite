@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biryani Menu</title>
+<style>
+  * { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+  }
+
+  body { 
+    font-family: Arial, sans-serif; 
+    background-color: whitesmoke; 
+  }
+  .menu-header { 
+    text-align: center; 
+    padding: 2rem 1rem 1.5rem; 
+  }
+  .menu-title { 
+    font-size: 32px; 
+    font-weight: 600; 
+    color: #222; 
+  }
+  .menu-sub { 
+    font-size: 15px; 
+    color: #888; 
+    margin-top: 6px;
+   }
+  .divider { 
+    width: 40px; height: 3px; 
+    background: #E23744; 
+    border-radius: 2px; 
+    margin: 12px auto 0; 
+  }
+  .grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); 
+    gap: 20px; 
+    padding: 0 2rem 3rem;
+    max-width: 1200px; 
+    margin: 0 auto; 
+  }
+  .card { background: #fff8e7; border-radius: 16px; border: 1px solid #f0e6d0; overflow: hidden; transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s; cursor: pointer; }
+  .card:hover { transform: translateY(-5px); border-color: #E23744; box-shadow: 0 8px 24px rgba(226,55,68,0.12); }
+  .img-wrap { position: relative; height: 180px; overflow: hidden; background: #f5e6d0; }
+  .img-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s; }
+  .card:hover .img-wrap img { transform: scale(1.06); }
+  .badge { position: absolute; top: 10px; right: 10px; background: #E23744; color: #fff; font-size: 11px; font-weight: 600; padding: 4px 10px; border-radius: 20px; z-index: 1; }
+  .card-body { padding: 14px 16px 16px; }
+  .card-name { font-size: 16px; font-weight: 600; color: #222; margin-bottom: 6px; }
+  .card-desc { font-size: 13px; color: #777; line-height: 1.5; margin-bottom: 14px; }
+  .card-footer { display: flex; align-items: center; justify-content: space-between; }
+  .price { font-size: 17px; font-weight: 700; color: #E23744; }
+  .veg-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; background: #3B6D11; margin-right: 6px; vertical-align: middle; }
+  .add-btn { background: #E23744; color: #fff; border: none; border-radius: 8px; padding: 7px 16px; font-size: 13px; font-weight: 600; cursor: pointer; transition: background 0.15s, transform 0.1s; }
+  .add-btn:hover { background: #c42e3a; }
+  .add-btn:active { transform: scale(0.96); }
+</style>
+</head>
+<body>
+<div class="menu-header">
+  <div class="menu-title">🍚 Biryani Menu</div>
+  <div class="menu-sub">Aromatic & slow-cooked to perfection</div>
+  <div class="divider"></div>
+</div>
+<div class="grid">
+
+  <div class="card">
+    <div class="img-wrap">
+      <span class="badge">Popular</span>
+      <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=400&q=80" alt="Veg Biryani">
+    </div>
+    <div class="card-body">
+      <div class="card-name"><span class="veg-dot"></span>Veg Biryani</div>
+      <div class="card-desc">Fragrant basmati rice cooked with fresh seasonal vegetables and whole spices.</div>
+      <div class="card-footer"><div class="price">₹149</div><button class="add-btn">Add +</button></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="img-wrap">
+      <span class="badge">Bestseller</span>
+      <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=400&q=80" alt="Paneer Biryani">
+    </div>
+    <div class="card-body">
+      <div class="card-name"><span class="veg-dot"></span>Paneer Biryani</div>
+      <div class="card-desc">Rich paneer cubes layered with aromatic basmati rice and saffron.</div>
+      <div class="card-footer"><div class="price">₹169</div><button class="add-btn">Add +</button></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="img-wrap">
+      <span class="badge">Spicy</span>
+      <img src="https://images.unsplash.com/photo-1630851840633-f96999247032?w=400&q=80" alt="Hyderabadi Biryani">
+    </div>
+    <div class="card-body">
+      <div class="card-name"><span class="veg-dot"></span>Hyderabadi Veg Biryani</div>
+      <div class="card-desc">Authentic dum-style biryani with bold Hyderabadi flavours and caramelized onions.</div>
+      <div class="card-footer"><div class="price">₹179</div><button class="add-btn">Add +</button></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="img-wrap">
+      <img src="image/b1.jpg" alt="Mushroom Biryani">
+    </div>
+    <div class="card-body">
+      <div class="card-name"><span class="veg-dot"></span>Mushroom Biryani</div>
+      <div class="card-desc">Loaded with juicy mushrooms and aromatic spices cooked in basmati rice.</div>
+      <div class="card-footer"><div class="price">₹159</div><button class="add-btn">Add +</button></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="img-wrap">
+      <span class="badge">Premium</span>
+      <img src="https://images.unsplash.com/photo-1596797038530-2c107229654b?w=400&q=80" alt="Kaju Biryani">
+    </div>
+    <div class="card-body">
+      <div class="card-name"><span class="veg-dot"></span>Kaju Biryani</div>
+      <div class="card-desc">Premium biryani topped with golden roasted cashews and fried onions.</div>
+      <div class="card-footer"><div class="price">₹189</div><button class="add-btn">Add +</button></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="img-wrap">
+      <span class="badge">Smoky</span>
+      <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=400&q=80" alt="Tandoori Biryani">
+    </div>
+    <div class="card-body">
+      <div class="card-name"><span class="veg-dot"></span>Tandoori Biryani</div>
+      <div class="card-desc">Smoky and spicy rice slow-cooked with tandoori-style marinated veggies.</div>
+      <div class="card-footer"><div class="price">₹199</div><button class="add-btn">Add +</button></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="img-wrap">
+      <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=400&q=80" alt="Jeera Rice Biryani">
+    </div>
+    <div class="card-body">
+      <div class="card-name"><span class="veg-dot"></span>Jeera Rice Biryani</div>
+      <div class="card-desc">Light and simple cumin-flavoured rice cooked with gentle whole spices.</div>
+      <div class="card-footer"><div class="price">₹139</div><button class="add-btn">Add +</button></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="img-wrap">
+      <span class="badge">Special</span>
+      <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=400&q=80" alt="Special Dum Biryani">
+    </div>
+    <div class="card-body">
+      <div class="card-name"><span class="veg-dot"></span>Special Dum Biryani</div>
+      <div class="card-desc">Slow-cooked traditional dum method — sealed pot, full flavour.</div>
+      <div class="card-footer"><div class="price">₹209</div><button class="add-btn">Add +</button></div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Burger Menu</title>
+<style>
+
+  * { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+  }
+  body { 
+    font-family: Arial, sans-serif; 
+    background-color: whitesmoke; 
+  }
+  .menu-header { 
+    text-align: center; 
+    padding: 2rem 1rem 1.5rem; 
+  }
+  .menu-title { 
+    font-size: 32px; 
+    font-weight: 600; 
+    color: #222; 
+  }
+  .menu-sub { 
+    font-size: 15px; 
+    color: #888;
+     margin-top: 6px; 
+    }
+  .divider { 
+    width: 40px; height: 3px; 
+    background: #E23744; 
+    border-radius: 2px;
+     margin: 12px auto 0; 
+    }
+  .grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); 
+    gap: 20px; 
+    padding: 0 2rem 3rem; 
+    max-width: 1200px;
+    margin: 0 auto; }
+  .card { background: #fff8e7; border-radius: 16px; border: 1px solid #f0e6d0; overflow: hidden; transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s; cursor: pointer; }
+  .card:hover { transform: translateY(-5px); border-color: #E23744; box-shadow: 0 8px 24px rgba(226,55,68,0.12); }
+  .img-wrap { position: relative; height: 180px; overflow: hidden; background: #f5e6d0; }
+  .img-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s; }
+  .card:hover .img-wrap img { transform: scale(1.06); }
+  .badge { position: absolute; top: 10px; right: 10px; background: #E23744; color: #fff; font-size: 11px; font-weight: 600; padding: 4px 10px; border-radius: 20px; z-index: 1; }
+  .card-body { padding: 14px 16px 16px; }
+  .card-name { font-size: 16px; font-weight: 600; color: #222; margin-bottom: 6px; }
+  .card-desc { font-size: 13px; color: #777; line-height: 1.5; margin-bottom: 14px; }
+  .card-footer { display: flex; align-items: center; justify-content: space-between; }
+  .price { font-size: 17px; font-weight: 700; color: #E23744; }
+  .veg-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; background: #3B6D11; margin-right: 6px; vertical-align: middle; }
+  .add-btn { background: #E23744; color: #fff; border: none; border-radius: 8px; padding: 7px 16px; font-size: 13px; font-weight: 600; cursor: pointer; transition: background 0.15s, transform 0.1s; }
+  .add-btn:hover { background: #c42e3a; }
+  .add-btn:active { transform: scale(0.96); }
+</style>
+</head>
+<body>
+<div class="menu-header">
+  <div class="menu-title">🍔 Burger Menu</div>
+  <div class="menu-sub">Stacked, loaded & made to satisfy</div>
+  <div class="divider"></div>
+</div>
+<div class="grid">
+
+  <div class="card">
+    <div class="img-wrap">
+      <span class="badge">Popular</span>
+      <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&q=80" alt="Veg Burger">
+    </div>
+    <div class="card-body">
+      <div class="card-name"><span class="veg-dot"></span>Veg Burger</div>
+      <div class="card-desc">Crispy veg patty with fresh lettuce, tomato and tangy sauce.</div>
+      <div class="card-footer"><div class="price">₹79</div><button class="add-btn">Add +</button></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="img-wrap">
+      <span class="badge">Bestseller</span>
+      <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&q=80" alt="Cheese Burger">
+    </div>
+    <div class="card-body">
+      <div class="card-name"><span class="veg-dot"></span>Cheese Burger</div>
+      <div class="card-desc">Loaded with a thick melting cheese slice on a toasted bun.</div>
+      <div class="card-footer"><div class="price">₹99</div><button class="add-btn">Add +</button></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="img-wrap">
+      <img src="/image/b2.jpg" alt="Paneer Burger">
+    </div>
+    <div class="card-body">
+      <div class="card-name"><span class="veg-dot"></span>Paneer Burger</div>
+      <div class="card-desc">Grilled paneer patty with mint chutney and crispy toppings.</div>
+      <div class="card-footer"><div class="price">₹119</div><button class="add-btn">Add +</button></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="img-wrap">
+      <span class="badge">XL</span>
+      <img src="https://images.unsplash.com/photo-1586816001966-79b736744398?w=400&q=80" alt="Double Patty Burger">
+    </div>
+    <div class="card-body">
+      <div class="card-name"><span class="veg-dot"></span>Double Patty Burger</div>
+      <div class="card-desc">Extra crispy double veg patty stacked high with sauces.</div>
+      <div class="card-footer"><div class="price">₹139</div><button class="add-btn">Add +</button></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="img-wrap">
+      <span class="badge">Spicy</span>
+      <img src="https://images.unsplash.com/photo-1550317138-10000687a72b?w=400&q=80" alt="Masala Burger">
+    </div>
+    <div class="card-body">
+      <div class="card-name"><span class="veg-dot"></span>Masala Burger</div>
+      <div class="card-desc">Indian-style spicy masala patty with onion and green chutney.</div>
+      <div class="card-footer"><div class="price">₹89</div><button class="add-btn">Add +</button></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="img-wrap">
+      <span class="badge">Hot</span>
+      <img src="https://images.unsplash.com/photo-1561758033-d89a9ad46330?w=400&q=80" alt="Peri Peri Burger">
+    </div>
+    <div class="card-body">
+      <div class="card-name"><span class="veg-dot"></span>Peri Peri Burger</div>
+      <div class="card-desc">Fiery peri peri sauce drizzled on a crispy patty with coleslaw.</div>
+      <div class="card-footer"><div class="price">₹109</div><button class="add-btn">Add +</button></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="img-wrap">
+      <img src="https://images.unsplash.com/photo-1607013251379-e6eecfffe234?w=400&q=80" alt="Butter Burger">
+    </div>
+    <div class="card-body">
+      <div class="card-name"><span class="veg-dot"></span>Butter Burger</div>
+      <div class="card-desc">Soft buttery bun with a golden toasted patty and creamy filling.</div>
+      <div class="card-footer"><div class="price">₹99</div><button class="add-btn">Add +</button></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="img-wrap">
+      <span class="badge">Signature</span>
+      <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=400&q=80" alt="Special QuickBite Burger">
+    </div>
+    <div class="card-body">
+      <div class="card-name"><span class="veg-dot"></span>Special QuickBite Burger</div>
+      <div class="card-desc">Our house signature burger with secret sauce and premium toppings.</div>
+      <div class="card-footer"><div class="price">₹149</div><button class="add-btn">Add +</button></div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
