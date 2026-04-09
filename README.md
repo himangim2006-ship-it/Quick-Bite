@@ -3,12 +3,12 @@ QuickBite is a fully responsive food ordering web application that allows users 
 This is a beginner-friendly project structured for simplicity and easy understanding.
 # Features
 
-* 🍔 Interactive food menu
-* 🏪 Popular restaurants section
-* ⭐ Top dishes showcase
-* 🛒 Add to cart functionality (basic UI)
-* 📱 Responsive design (mobile-friendly)
-* 🎯 Simple and user-friendly interface
+* Interactive food menu
+* Popular restaurants section
+* Top dishes showcase
+* Add to cart functionality (basic UI)
+* Responsive design (mobile-friendly)
+* Simple and user-friendly interface
 
  # Technologies Used
 
