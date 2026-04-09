@@ -16,18 +16,4 @@ This is a beginner-friendly project structured for simplicity and easy understan
 * **CSS3** → Styling and layout design
 * **JavaScript** → Interactivity and dynamic behavior
   
-# Project Structure
-
-# Quick-Bite
-│── index.html
-│── style.css
-│── script.js
-│── README.md
-│
-├── images/
-│     ├── burger.jpg
-│     ├── pizza.jpg
-│     ├── cake.jpg
-│     └── logo.png 
-
 
